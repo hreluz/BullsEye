@@ -3,19 +3,22 @@
 //  BullsEye
 //
 //  Created by Hector Reluz on 7/15/23.
-//
+// ctrl + i = reindent
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello there Grievious!!!")
+            Text("🎯🎯🎯\nPut the Bullseye as close as you can to")
+            Text("89")
+            HStack {
+                Text("1")
+                Slider(value: .constant(50), in: 1.0...100.0)
+                Text("100")
+            }
+            Button("Hit me") {
+            }
         }
-        .padding()
     }
 }
 
