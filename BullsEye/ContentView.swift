@@ -27,6 +27,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
             }
             Button("Hit me") {
+                print("Whatever we want")
             }
         }
     }
