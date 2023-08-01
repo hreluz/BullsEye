@@ -41,7 +41,8 @@ struct ContentView: View {
                     }
                 },
                 message: {
-                    Text("This is my first alert")
+                    let roundedValue: Int = Int(sliderValue.rounded())
+                    Text("The slider's value is \(sliderValue), and rounded value is \(roundedValue).")
                 }
             )
         }
